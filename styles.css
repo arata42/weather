@@ -1,0 +1,124 @@
+body {
+	transition: background 1s, color 1s;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	color: #000;
+	background-color: #ccc;
+	background-size: cover;        /* 画面全体をカバー */
+	background-position: center;   /* 中央に配置 */
+	background-repeat: no-repeat;  /* 繰り返さない */
+	margin: 0;                     /* ブラウザのデフォルト余白をなくす */
+	height: 100vh;
+}
+/*
+.day {
+	background-color: #ffe;
+	color: #000;
+}
+
+.night {
+	background-color: #001d3d;
+	color: #fff;
+}
+*/
+.sunny {
+	color: #ff8000;
+}
+
+.rainy {
+	color: #00f;
+}
+
+.cloudy {
+	color: #000;
+}
+
+.day.sunny {
+	background-image: url('images/hinata_sunny_am.png');
+}
+
+.day.rainy {
+	background-image: url('images/ruka_rainy_am.png');
+}
+
+.day.cloudy {
+	background-image: url('images/town_cloudy_am.png');
+}
+
+.night.sunny {
+	background-image: url('images/hinata_sunny_evening.png');
+}
+
+.night.rainy {
+	background-image: url('images/ruka_rainy_evening.png');
+}
+
+.night.cloudy {
+	background-image: url('images/town_cloudy_evening.png');
+}
+
+.hot {
+	border: 5px solid red;
+}
+
+.cold {
+	border: 5px solid blue;
+}
+
+h1 {
+	margin: 0;
+	padding: 1em;
+}
+
+#weather-info {
+	white-space: pre;
+}
+
+#time{
+    display: inline;
+    line-height: 1em;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+#sec{
+    display: inline;
+    line-height: 1em;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+    color: #000;
+}
+
+.nowtime{
+    margin-top: 15px;
+    margin-left: 15px;
+    width:240px;
+    padding : 5px 0px 5px 0px;
+    border-radius: 10px 10px 10px 10px;
+    
+    background: rgba(255,255,255,1.0);
+}
+
+
+
+
+ #colon{
+    vertical-align: 7%;
+}
+*/
