@@ -65,6 +65,7 @@ body {
 
 .night.cloudy {
 	background-image: url('images/town_cloudy_evening.png');
+	background-color: #0B4163;
 }
 
 .hot {
