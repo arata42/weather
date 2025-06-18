@@ -45,22 +45,27 @@ body {
 
 .day.sunny {
 	background-image: url('images/hinata_sunny_am.png');
+	background-color: rgb(83,160,214);
 }
 
 .day.rainy {
 	background-image: url('images/ruka_rainy_am.png');
+	background-color: rgb(94,152,185);
 }
 
 .day.cloudy {
 	background-image: url('images/town_cloudy_am.png');
+	background-color: rgb(132,186,229);
 }
 
 .night.sunny {
 	background-image: url('images/hinata_sunny_evening.png');
+	background-color: #08222E;
 }
 
 .night.rainy {
 	background-image: url('images/ruka_rainy_evening.png');
+	background-color: #0E3149;
 }
 
 .night.cloudy {
