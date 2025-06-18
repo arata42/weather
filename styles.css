@@ -1,5 +1,5 @@
 body {
-	transition: background 1s, color 1s;
+	transition: background 2s, color 2s;
 	font-family: sans-serif;
 	text-align: center;
 	padding: 0;
@@ -13,6 +13,13 @@ body {
 	margin: 0;                     /* ブラウザのデフォルト余白をなくす */
 	height: 100vh;
 }
+
+#info_back {
+	background-color: rgba(0,0,0,0.1);
+	width: fit-content;
+    margin: 0 auto;
+}
+
 /*
 .day {
 	background-color: #ffe;

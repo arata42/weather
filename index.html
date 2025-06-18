@@ -8,26 +8,25 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>
 </head>
 <body>
-	<h1>渋谷109前の現在の天気</h1>
-	
-	<div class="nowtime">
-	
-	<!-- ここから時刻 -->
-	<p id="time"/>
-	  <script language="JavaScript">
-	  const day = function() {
-	    const dt = dayjs(new Date());
-	    const element = document.getElementById("time");
-	      element.innerHTML = `${dt.format('HH')}<span id="colon">:</span>${dt.format('mm')} <span id="sec">${dt.format('ss')}</span>`;
-	  };
-	  setInterval(day, 1000);
-	  </script>
-	<!-- ここまで時刻 -->
-	
+	<div id="info_back">
+		<h1>渋谷109前の現在の天気</h1>
+		<div class="nowtime">
+			<!-- ここから時刻 -->
+			<p id="time"/>
+			<script language="JavaScript">
+				const day = function() {
+					const dt = dayjs(new Date());
+					const element = document.getElementById("time");
+					element.innerHTML = `${dt.format('HH')}<span id="colon">:</span>${dt.format('mm')} <span id="sec">${dt.format('ss')}</span>`;
+				};
+				
+				setInterval(day, 1000);
+			</script>
+			<!-- ここまで時刻 -->
+		</div>
+		<img id="weather-icon" src="">
+		<div id="weather-info">取得中...</div>
 	</div>
-	
-	<img id="weather-icon" src="">
-	<div id="weather-info">取得中...</div>
 	<script src="script.js"></script>
 </body>
 </html>
