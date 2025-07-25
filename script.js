@@ -1,12 +1,17 @@
-const apiKey = '5eda8375041388dd445559a796cf189e';
+//const apiKey = 'xxxxx';
 const lat = 35.6595;
 const lon = 139.7005;
 const updateInterval = 5 * 60 * 1000; // 5分
 
 async function fetchWeather() {
 	try {
-		const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=ja`);
-		//https://api.openweathermap.org/data/2.5/weather?lat=35.6595&lon=139.7005&appid=5eda8375041388dd445559a796cf189e&units=metric&lang=ja
+		const res = await fetch('https://weather.osakana.workers.dev', {
+      			method: 'POST',
+      			headers: { 'Content-Type': 'application/json' },
+      			body: JSON.stringify({ lat, lon })
+    		});
+		//https://api.openweathermap.org/data/2.5/weather?lat=35.6595&lon=139.7005&appid=xxxxx&units=metric&lang=ja
+		
 		const data = await res.json();
 		console.log(data);
 		
